@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="card" id="card">
+            <!-- Upload Information -->
+            <div class="info">
+            <h1 id="name">Click To Enter Your Name</h1>
+            <div class="logos">
+                <div class="i1" >
+            <i class="ri-phone-fill" id="i1"></i>
+            <h4 id="num">Click Enter Your Phone Num</h4>
+            </div>
+            <div class="i1" >
+            <i class="fa-solid fa-globe" id="i2"></i>
+            <h4 id="web">Click Enter Your website</h4>
+        </div>
+        <div class="i1">
+            <i class="fa-solid fa-envelope  i3" ></i>
+            <h4 id="email">Click Enter Your E-mail</h4>
+        </div>
+            </div>
+            <hr>
+            <h4 id="address">Click To Enter Your Address</h4>
+        </div>
+
+        <!-- Upload Img -->
+        <div class="right-c">
+           
+           <img src="users-vector-icon-png_260862-removebg-preview.png" id="preview" style="max-width: 100%; max-height: 300px; margin-top: 20px;">
+
+           <input type="file" id="uploadInput" onchange="previewImage()" hidden>
+
+           <button id="Uploadimg">Upload Img</button>
+
+        </div>
+        <img src="wave.png" alt="" id="uil">
+       
+
+        </div>
+
+        <button onclick="convertAndDownload()" id="getbtn">Get The Card</button>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

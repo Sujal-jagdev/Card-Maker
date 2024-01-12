@@ -1,0 +1,123 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: #000;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+i{
+    color: #fff;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+body{
+    background-color: #333;
+}
+.card{
+    height: 300px;
+    width: 40%;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    
+}
+#name{
+    width: 101%;
+    display: inline;
+}
+.info h1{
+    cursor: pointer;
+    font-size: 30px;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+.logos i{
+    margin: 10px 0px;
+    font-size: 15px;
+    background-color: #111;
+    padding: 4px;
+    border-radius: 50%;
+}
+hr{
+    width: 43%;
+    margin-top: 2.5%;  
+}
+.info h4{
+    margin-top: 4%;
+    cursor: pointer;
+}
+#address{
+    width: 70%;
+}
+.i1{
+    display: flex;
+}
+.i1 i{
+    cursor: pointer;
+}
+.i1 h4{
+    margin-top:2%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.right-c{
+    height: 100%;
+    width: 38%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #000; */
+}
+.right-c img{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 7%;
+    object-fit: cover;
+    object-position: center;
+}
+.right-c button{
+    padding: 7px 15px;
+    margin-top: 7%;
+}
+.card #uil{
+    position: absolute;
+    bottom: -20%;
+    z-index: -8;
+    width: 100%;
+    margin-left: -3.7%;
+}
+#getbtn{
+    transform: translate(-50%,-50%);
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    padding: 8px 14px;
+    background-color: purple;
+    border: none;
+    color: #fff;
+    font-weight: 900;
+}
+#Uploadimg{
+    background-color: purple;
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    padding: 8px 15px;
+}
