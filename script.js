@@ -94,28 +94,28 @@ function previewImage() {
     }
 }
 
-
-
+// Function to convert HTML element to image and download as JPG
 function convertAndDownload() {
-    
-    var element = document.getElementById('card');
+    // Get the target HTML element
+    var element = document.querySelector('#card');
 
+    // Use html2canvas to convert the element to an image
     html2canvas(element).then(function (canvas) {
-
+      // Create a new image element with the converted image data
       var imgData = canvas.toDataURL('image/jpeg');
       var img = new Image();
       img.src = imgData;
 
+      // Create a link element to trigger the download
       var link = document.createElement('a');
       link.href = imgData;
-      link.download = 'downloaded_image.jpg';
+      link.download = 'CardMaker_image.jpg';
 
+      // Append the link to the document and trigger the download
       document.body.appendChild(link);
       link.click();
 
+      // Clean up by removing the link element
       document.body.removeChild(link);
     });
   }
-
-
-
